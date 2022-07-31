@@ -1,0 +1,37 @@
+{
+  "name": "puppeteer-cluster-example",
+  "version": "0.0.0",
+  "description": "Shows how Puppereer with a cluster (parallel) works.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --tree-kill --respawn --transpile-only --clear --watch '*.json,*.ts' src/index.ts",
+    "start": "ts-node --transpile-only ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeesCBakker/puppeteer-cluster-example.git"
+  },
+  "keywords": [
+    "puppeteer",
+    "cluster",
+    "screenshot"
+  ],
+  "author": "Kees C. Bakker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KeesCBakker/puppeteer-cluster-example/issues"
+  },
+  "homepage": "https://github.com/KeesCBakker/puppeteer-cluster-example#readme",
+  "dependencies": {
+    "puppeteer": "^15.5.0",
+    "puppeteer-cluster": "^0.23.0",
+    "sanitize-filename": "^1.6.3",
+    "tmp": "^0.2.1",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/tmp": "^0.2.3"
+  }
+}
